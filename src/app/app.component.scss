@@ -1,33 +1,61 @@
 #container {
   display: grid;
   height: 100vh;
-  grid-template-columns: 100px 1fr 1fr 1fr;
   grid-template-rows: 120px 200px 1fr 80px;
+  grid-template-columns: 1fr;
   grid-template-areas:
-    "logo header header header"
-    "lem wrk mss src"
-    "main main main main"
-    "footer footer footer footer";
+    "banner"
+    "sections"
+    "main"
+    "footer";
+}
+header {
+  grid-area: banner;
+  display: flex;
+  column-gap: 8px;
+  // position: sticky;
+  // top: 0;
 }
 #logo {
-  grid-area: logo;
-  position: sticky;
-  top: 0;
+  flex: 0 1 auto;
 }
 #title {
-  grid-area: header;
-  position: sticky;
-  top: 0;
+  flex: 0 1 auto;
 }
 #title h1 {
-  margin: 40px 0 0 32px;
+  margin: 40px 0;
   font-size: 2.25rem;
 }
-div.section {
-  border: 1px solid #a31324;
+#sections {
+  grid-area: sections;
+  display: flex;
+  gap: 16px;
+  margin: 16px 0 0 16px;
+  flex-wrap: wrap;
+}
+#sections div {
+  flex: 0 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // border: 2px solid #a31324;
   border-radius: 12px;
   padding: 16px;
-  margin: 0 8px;
+  width: 150px;
+  background-color: #fab6be;
+}
+#sections div * {
+  flex: 0 1 auto;
+}
+#sections h2 {
+  color: #a31324;
+}
+.big-icon {
+  font-size: 64px;
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  color: #a31324;
 }
 #s-lem {
   grid-area: lem;
@@ -49,4 +77,17 @@ footer {
   margin: 0;
   grid-area: footer;
   background-color: #e0e0e0;
+}
+
+@media only screen and (max-width: 500px) {
+  #title h1 {
+    margin: 40px 0;
+    font-size: 1.25rem;
+  }
+}
+@media only screen and (max-width: 300px) {
+  #title h1 {
+    margin: 10px 0;
+    font-size: 1.25rem;
+  }
 }

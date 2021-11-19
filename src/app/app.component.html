@@ -1,5 +1,5 @@
-<div>
-  <div id="container">
+<div id="container">
+  <header>
     <div id="logo">
       <img src="./assets/img/pura-logo-100.png" />
     </div>
@@ -9,16 +9,30 @@
         <text x="0" y="25">Digital Encyclopedia of Atticism</text>
       </svg> -->
     </div>
+  </header>
 
-    <div class="section" id="s-lem">LEM</div>
-    <div class="section" id="s-wrk">WRK</div>
-    <div class="section" id="s-mss">MSS</div>
-    <div class="section" id="s-src">SRC</div>
-
-    <main>
-      <router-outlet></router-outlet>
-    </main>
-
-    <footer>footer</footer>
+  <div id="sections">
+    <div id="s-lem">
+      <mat-icon class="big-icon">list_alt</mat-icon>
+      <h2>lemmi</h2>
+    </div>
+    <div id="s-wrk">
+      <mat-icon class="big-icon">history_edu</mat-icon>
+      <h2>opere</h2>
+    </div>
+    <div id="s-mss">
+      <mat-icon class="big-icon">menu_book</mat-icon>
+      <h2>manoscritti</h2>
+    </div>
+    <div id="s-src">
+      <mat-icon class="big-icon">search</mat-icon>
+      <h2>ricerca</h2>
+    </div>
   </div>
+
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+
+  <footer>footer</footer>
 </div>
