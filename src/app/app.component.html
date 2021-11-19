@@ -1,20 +1,24 @@
 <div>
-  <header>
-    <div id="banner">
+  <div id="container">
+    <div id="logo">
       <img src="./assets/img/pura-logo-100.png" />
-      <!-- <h1>Digital Encyclopedia of Atticism</h1> -->
-      <svg viewBox="0 0 200 50" style="height:100px;background-color: bisque;">
+    </div>
+    <div id="title">
+      <h1>Digital Encyclopedia of Atticism</h1>
+      <!-- <svg viewBox="0 0 300 40" style="height: 100px; background-color: bisque">
         <text x="0" y="25">Digital Encyclopedia of Atticism</text>
-      </svg>
+      </svg> -->
     </div>
-  </header>
-  <main>
-    <router-outlet></router-outlet>
-  </main>
 
-  <footer>
-    <div class="footer-container">
-      <div class="info">footer stuff</div>
-    </div>
-  </footer>
+    <div class="section" id="s-lem">LEM</div>
+    <div class="section" id="s-wrk">WRK</div>
+    <div class="section" id="s-mss">MSS</div>
+    <div class="section" id="s-src">SRC</div>
+
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+
+    <footer>footer</footer>
+  </div>
 </div>

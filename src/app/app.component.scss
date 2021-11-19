@@ -1,15 +1,52 @@
-#banner {
-  display: flex;
-  align-items: center;
+#container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 100px 1fr 1fr 1fr;
+  grid-template-rows: 120px 200px 1fr 80px;
+  grid-template-areas:
+    "logo header header header"
+    "lem wrk mss src"
+    "main main main main"
+    "footer footer footer footer";
 }
-#banner img {
-  flex: 0 1 auto;
+#logo {
+  grid-area: logo;
+  position: sticky;
+  top: 0;
 }
-#banner h1 {
-  flex: 1 0;
-  margin: 0 0 0 8px;
+#title {
+  grid-area: header;
+  position: sticky;
+  top: 0;
 }
-#banner svg {
-  flex: 1 0;
+#title h1 {
+  margin: 40px 0 0 32px;
+  font-size: 2.25rem;
+}
+div.section {
+  border: 1px solid #a31324;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 0 8px;
+}
+#s-lem {
+  grid-area: lem;
+}
+#s-wrk {
+  grid-area: wrk;
+}
+#s-mss {
+  grid-area: mss;
+}
+#s-src {
+  grid-area: src;
+}
+main {
+  margin: 8px;
+  grid-area: main;
+}
+footer {
   margin: 0;
+  grid-area: footer;
+  background-color: #e0e0e0;
 }
