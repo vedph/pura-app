@@ -7,11 +7,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
+import { LemmaListPageComponent } from './lemma-list-page/lemma-list-page.component';
+import { WorkListPageComponent } from './work-list-page/work-list-page.component';
+import { MsListPageComponent } from './ms-list-page/ms-list-page.component';
+import { SearchPageComponent } from './search-page/search-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    LemmaListPageComponent,
+    WorkListPageComponent,
+    MsListPageComponent,
+    SearchPageComponent
   ],
   imports: [
     BrowserModule,
