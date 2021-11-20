@@ -35,7 +35,7 @@ header {
   flex-wrap: wrap;
   background-color: #f0f0f0;
 }
-#sections div {
+#sections div a {
   flex: 0 1 auto;
   display: flex;
   flex-direction: column;
@@ -46,8 +46,9 @@ header {
   width: 150px;
   margin: 16px 0 16px 16px;
   background-color: white;
+  text-decoration: none;
 }
-#sections div * {
+#sections div a * {
   flex: 0 1 auto;
 }
 #sections h2 {
