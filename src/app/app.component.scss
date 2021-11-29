@@ -24,8 +24,11 @@ header {
   flex: 0 1 auto;
 }
 #title h1 {
-  margin: 40px 0;
+  margin: 40px 0 8px 0;
   font-size: 2.25rem;
+}
+#title p {
+  color: silver;
 }
 #sections {
   grid-area: sections;
@@ -84,6 +87,9 @@ footer {
   grid-area: footer;
   background-color: #f0f0f0;
   text-align: center;
+}
+footer a {
+  color: silver;
 }
 
 @media only screen and (max-width: 500px) {
